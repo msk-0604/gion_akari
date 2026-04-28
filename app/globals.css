@@ -25,6 +25,7 @@ body {
   color: var(--text);
   font-family: "Yu Mincho", "Hiragino Mincho ProN", "Yu Gothic", "Noto Sans JP", serif;
   overflow-x: hidden;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -202,7 +203,7 @@ main {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4, 7, 6, 0.3) 10%, rgba(4, 7, 6, 0.84) 85%);
+  background: linear-gradient(180deg, rgba(4, 7, 6, 0.34) 10%, rgba(4, 7, 6, 0.88) 85%);
   display: flex;
   align-items: flex-end;
 }
@@ -229,14 +230,17 @@ main {
 h1 {
   margin: 0.8rem 0 0.6rem;
   font-size: clamp(2rem, 7vw, 4rem);
-  line-height: 1.15;
+  line-height: 1.4;
   font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
 .hero-copy {
   margin: 0;
   font-size: clamp(1rem, 3.5vw, 1.26rem);
   color: #e6dbc8;
+  line-height: 2;
+  letter-spacing: 0.08em;
 }
 
 .hero-ctas {
@@ -272,13 +276,14 @@ h2 {
   margin: 0;
   font-size: clamp(1.5rem, 5vw, 2.4rem);
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .section-description {
   margin: 0.9rem 0 0;
   color: var(--text-sub);
-  line-height: 2;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .section-cta-row {
@@ -292,8 +297,8 @@ h2 {
 .story-text {
   margin: 1rem 0 0;
   color: var(--text-sub);
-  line-height: 2.1;
-  font-size: 1.02rem;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .featured-grid {
@@ -362,7 +367,8 @@ h2 {
 .scene-card p {
   margin: 0.45rem 0 0;
   color: var(--text-sub);
-  line-height: 1.75;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .scene-visual-grid {
@@ -490,6 +496,8 @@ h2 {
 .reservation-band p {
   margin: 0;
   color: #efe5d3;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .instagram-grid {
@@ -575,6 +583,66 @@ h2 {
   background: var(--gold);
   color: #17120c;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8.6vw, 2.4rem);
+    line-height: 2;
+    letter-spacing: 0.08em;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .section-label,
+  .section-description,
+  .story-text,
+  .reason-card p,
+  .menu-note,
+  .list-note,
+  .scene-card p,
+  .reservation-band p,
+  .info-list dd,
+  .access-list dd,
+  .hero-copy,
+  .hero-overlay .eyebrow {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .hero-overlay .eyebrow,
+  .hero-copy {
+    line-height: 2;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-copy,
+  .section-description,
+  .story-text,
+  .reason-card p,
+  .menu-note,
+  .list-note,
+  .scene-card p,
+  .info-list dd,
+  .access-list dd,
+  .reservation-band p {
+    font-size: 16px;
+  }
+
+  .hero-ctas {
+    margin-top: 1.4rem;
+    padding-bottom: 2.9rem;
+    row-gap: 0.9rem;
+  }
 }
 
 @media (min-width: 920px) {
