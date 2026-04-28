@@ -13,7 +13,7 @@ export function Footer() {
             電話予約 075-606-4500
           </a>
           <a className="cta cta-primary" href={RESERVE_URL} target="_blank" rel="noreferrer">
-            ご予約はこちら
+            WEB予約
           </a>
         </div>
       </div>
