@@ -5,7 +5,7 @@ const FEATURED_IMAGE = "/featured-bento.png";
 
 export function FeaturedFood() {
   return (
-    <section id="featured" className="section section-featured animate-fade">
+    <section id="menu" className="section section-featured animate-fade">
       <div className="container featured-grid">
         <div className="featured-text">
           <p className="section-label">Signature</p>

@@ -10,7 +10,7 @@ export function Access() {
     <section id="access" className="section animate-fade">
       <div className="container access-box">
         <p className="section-label">Access</p>
-        <h2>アクセス・営業時間</h2>
+        <h2>アクセス</h2>
         <dl className="access-list">
           <div>
             <dt>住所</dt>

@@ -11,6 +11,7 @@ import { Hero } from "@/components/Hero";
 import { ReservationBand } from "@/components/ReservationBand";
 import { Scenes } from "@/components/Scenes";
 import { SocialProof } from "@/components/SocialProof";
+import { StoreInfo } from "@/components/StoreInfo";
 import { StickyCTA } from "@/components/StickyCTA";
 import { WhyChoose } from "@/components/WhyChoose";
 
@@ -20,15 +21,18 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <ReservationBand text="空席確認は30秒。今すぐオンライン予約できます。" />
         <Concept />
+        <ReservationBand text="祇園でのお食事は、事前予約でスムーズにご案内します。" />
         <WhyChoose />
         <FeaturedFood />
-        <Scenes />
-        <Gallery />
         <ReservationBand text="気になる料理があれば、そのまま予約へ。" />
         <Courses />
         <Drinks />
+        <Gallery />
+        <ReservationBand text="店内の雰囲気をご覧いただいた後、そのまま空席確認できます。" />
+        <Scenes />
+        <StoreInfo />
+        <ReservationBand text="記念日・接待・観光利用のご予約を承ります。" />
         <SocialProof />
         <Access />
         <ReservationBand text="ご来店前のご予約で、当日のご案内がよりスムーズです。" />

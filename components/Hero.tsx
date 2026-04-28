@@ -25,10 +25,10 @@ export function Hero() {
         </p>
         <div className="hero-ctas">
           <a className="cta cta-primary hero-cta" href={RESERVE_URL} target="_blank" rel="noreferrer">
-            予約する
+            空席を確認する
           </a>
           <a className="cta cta-outline hero-cta-secondary" href={PHONE_URL}>
-            電話する
+            電話で予約する
           </a>
         </div>
       </div>

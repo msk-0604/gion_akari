@@ -1,55 +1,28 @@
 import Image from "next/image";
 
-const menuItems = [
-  {
-    name: "彩あかり箱 特上",
-    price: "4,950円",
-    note: "トロ・ウニ・和牛・生海老入り",
-    image: "/menu-special.png"
-  },
-  {
-    name: "特製肉箱（数量限定）",
-    price: "5,400円",
-    note: "A5ランク黒毛和牛と北海道産いくら",
-    image: "/menu-limited.png"
-  },
-  {
-    name: "彩あかり箱 上",
-    price: "3,850円",
-    note: "いくら・まぐろ・うなぎ等の彩り海鮮",
-    image: "/menu-seasonal.png"
-  }
-];
+const interiorImages = ["/featured-bento.png", "/menu-special.png", "/menu-limited.png", "/menu-seasonal.png"];
 
 export function Gallery() {
   return (
     <section id="gallery" className="section section-gallery animate-fade">
       <div className="container">
-        <p className="section-label">Menu</p>
-        <h2>人気メニュー</h2>
+        <p className="section-label">Gallery</p>
+        <h2>静けさを愉しむ、祇園の和空間</h2>
         <p className="section-description">
-          見た目の華やかさと満足感を両立した、彩あかりの定番。観光・デート・ランチ利用で人気の高い料理です。
+          白木と陰影がつくる落ち着いた空気感。会話を邪魔しない設えで、接待・記念日・観光の食事時間を上質に整えます。
         </p>
-
-        <div className="menu-grid">
-          {menuItems.map((item) => (
-            <article className="menu-card animate-card" key={item.name}>
-              <div className="menu-image-wrap">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  className="menu-image"
-                  width={900}
-                  height={600}
-                  sizes="(max-width: 860px) 100vw, 33vw"
-                />
-              </div>
-              <div className="menu-body">
-                <p className="menu-name">{item.name}</p>
-                <p className="menu-note">{item.note}</p>
-                <p className="menu-price">{item.price}</p>
-              </div>
-            </article>
+        <div className="interior-grid">
+          {interiorImages.map((image, index) => (
+            <div className="interior-item" key={`${image}-${index}`}>
+              <Image
+                src={image}
+                alt="祇園彩あかりの空間と料理"
+                width={900}
+                height={700}
+                className="interior-image"
+                sizes="(max-width: 860px) 50vw, 25vw"
+              />
+            </div>
           ))}
         </div>
       </div>
