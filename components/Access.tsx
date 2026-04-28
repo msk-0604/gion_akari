@@ -1,7 +1,9 @@
 const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
 const INSTAGRAM_URL = "https://www.instagram.com/gion_iroakari/?hl=ja";
+const TABELOG_URL = "https://tabelog.com/kyoto/A2601/A260301/26041771/";
 const MAP_URL =
-  "https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92+%E5%BD%A9%E3%81%82%E3%81%8B%E3%82%8A";
+  "https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%A9%8B%E6%9C%AC%E7%94%BA413-6";
+const PHONE_URL = "tel:075-606-4500";
 
 export function Access() {
   return (
@@ -12,22 +14,36 @@ export function Access() {
         <dl className="access-list">
           <div>
             <dt>住所</dt>
-            <dd>京都府京都市東山区祇園周辺（詳細は予約ページをご確認ください）</dd>
+            <dd>京都府京都市東山区橋本町413-6 西いがやビル 4F</dd>
           </div>
           <div>
             <dt>営業時間</dt>
-            <dd>ランチ / ディナー（最新情報は予約ページにて）</dd>
+            <dd>月-土 11:30-15:00 / 17:00-21:30（L.O.あり） 日曜定休</dd>
+          </div>
+          <div>
+            <dt>アクセス</dt>
+            <dd>京阪 祇園四条駅 9番出口 徒歩5分 / 三条京阪駅 2番出口 徒歩7分</dd>
+          </div>
+          <div>
+            <dt>電話</dt>
+            <dd>075-606-4500</dd>
           </div>
         </dl>
         <div className="access-links">
           <a href={RESERVE_URL} target="_blank" rel="noreferrer" className="cta cta-primary">
             TableCheckで予約
           </a>
+          <a href={PHONE_URL} className="cta cta-outline">
+            電話する
+          </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
             Instagramを見る
           </a>
           <a href={MAP_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
-            アクセスを見る
+            地図を見る
+          </a>
+          <a href={TABELOG_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
+            食べログ参考情報
           </a>
         </div>
       </div>

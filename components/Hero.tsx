@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
+const PHONE_URL = "tel:075-606-4500";
 const FEATURED_IMAGE = "/featured-bento.png";
 
 export function Hero() {
@@ -17,12 +18,19 @@ export function Hero() {
         />
       </div>
       <div className="hero-overlay">
-        <p className="eyebrow">ハコスシ 彩あかり</p>
-        <h1>一箱に、四季を詰めて。</h1>
-        <p className="hero-copy">祇園で味わう、彩りのごちそう。</p>
-        <a className="cta cta-primary hero-cta" href={RESERVE_URL} target="_blank" rel="noreferrer">
-          ご予約はこちら
-        </a>
+        <p className="eyebrow">京都 祇園 / ハコノスシ 彩あかり</p>
+        <h1>祇園で味わう、静かな大人の一席</h1>
+        <p className="hero-copy">
+          京都・祇園の情緒に包まれながら、季節の料理と心地よい時間を。
+        </p>
+        <div className="hero-ctas">
+          <a className="cta cta-primary hero-cta" href={RESERVE_URL} target="_blank" rel="noreferrer">
+            予約する
+          </a>
+          <a className="cta cta-outline hero-cta-secondary" href={PHONE_URL}>
+            電話する
+          </a>
+        </div>
       </div>
     </section>
   );

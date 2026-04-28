@@ -2,12 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "祇園 彩あかり｜ハコスシと彩り豊かな和食",
-  description: "祇園で味わう彩り豊かなハコスシ。ランチ・観光・デートにおすすめ。",
+  metadataBase: new URL("https://gionakari.vercel.app"),
+  title: "祇園 彩あかり｜祇園で味わう静かな大人の一席",
+  description:
+    "祇園四条駅徒歩5分。彩り豊かなハコノスシと季節の和食を、落ち着いた和モダン空間で。予約・電話・地図案内にすぐアクセスできます。",
+  alternates: {
+    canonical: "/"
+  },
   openGraph: {
-    title: "祇園 彩あかり｜ハコスシと彩り豊かな和食",
-    description: "祇園で味わう彩り豊かなハコスシ。ランチ・観光・デートにおすすめ。",
-    url: "https://www.tablecheck.com/ja/iroakari-gion",
+    title: "祇園 彩あかり｜祇園で味わう静かな大人の一席",
+    description:
+      "京都・祇園の情緒に包まれながら、季節の料理と心地よい時間を。公式サイトから予約・電話・地図へ。",
+    url: "https://gionakari.vercel.app/",
     siteName: "祇園 彩あかり",
     locale: "ja_JP",
     type: "website",
@@ -22,8 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "祇園 彩あかり｜ハコスシと彩り豊かな和食",
-    description: "祇園で味わう彩り豊かなハコスシ。ランチ・観光・デートにおすすめ。",
+    title: "祇園 彩あかり｜祇園で味わう静かな大人の一席",
+    description:
+      "祇園四条駅徒歩5分。彩り豊かなハコノスシと季節の和食。予約・電話・地図導線つきの公式サイト。",
     images: ["/ogp.jpg"]
   }
 };

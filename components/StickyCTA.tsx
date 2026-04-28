@@ -6,12 +6,12 @@ const MAP_URL =
 export function StickyCTA() {
   return (
     <div className="sticky-cta" role="navigation" aria-label="固定アクション">
-      <a href={RESERVE_URL} target="_blank" rel="noreferrer">
-        予約
-      </a>
       <a href={PHONE_URL}>電話</a>
       <a href={MAP_URL} target="_blank" rel="noreferrer">
-        アクセス
+        地図
+      </a>
+      <a href={RESERVE_URL} target="_blank" rel="noreferrer">
+        予約
       </a>
     </div>
   );

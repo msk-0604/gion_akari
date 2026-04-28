@@ -1,10 +1,11 @@
 :root {
-  --bg: #f7f3ea;
-  --paper: #fffdf8;
-  --ink: #1f1a17;
-  --sub: #6b6259;
-  --gold: #a4833b;
-  --line: #dfd6c7;
+  --bg: #0f1714;
+  --paper: #18201d;
+  --ink: #f3ece0;
+  --sub: #b7b8ac;
+  --gold: #c2a15f;
+  --line: #31403a;
+  --deep: #0b110f;
   --max: 1120px;
 }
 
@@ -19,6 +20,7 @@ body {
   color: var(--ink);
   background: var(--bg);
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -40,7 +42,7 @@ main {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(8px);
-  background: color-mix(in oklab, var(--paper) 78%, transparent);
+  background: color-mix(in oklab, var(--deep) 82%, transparent);
   border-bottom: 1px solid color-mix(in oklab, var(--line) 85%, transparent);
 }
 
@@ -68,7 +70,7 @@ main {
   height: 42px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: var(--paper);
+  background: #121a17;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -94,17 +96,17 @@ main {
 }
 
 .cta-primary {
-  background: var(--ink);
-  color: #fff;
+  background: var(--gold);
+  color: #191510;
 }
 
 .cta-primary:hover {
-  background: #000;
+  background: #d1b172;
 }
 
 .cta-outline {
   border: 1px solid var(--line);
-  background: var(--paper);
+  background: color-mix(in oklab, var(--paper) 72%, transparent);
 }
 
 .hero {
@@ -132,7 +134,7 @@ main {
   inset: auto 0 0;
   color: #fff;
   padding: 2.2rem 1rem 2rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.72) 85%);
+  background: linear-gradient(180deg, rgba(5, 8, 7, 0.2) 0%, rgba(4, 8, 7, 0.88) 85%);
 }
 
 .eyebrow {
@@ -150,10 +152,22 @@ h1 {
 .hero-copy {
   margin: 0;
   font-size: clamp(1rem, 3.8vw, 1.3rem);
+  color: #e8e1d4;
 }
 
 .hero-cta {
   margin-top: 1rem;
+}
+
+.hero-ctas {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta-secondary {
+  color: #f1e9dc;
 }
 
 .section {
@@ -211,7 +225,7 @@ h2 {
 
 .scene-card {
   border: 1px solid var(--line);
-  background: var(--paper);
+  background: color-mix(in oklab, var(--paper) 86%, transparent);
   border-radius: 14px;
   padding: 1rem;
   font-weight: 600;
@@ -226,7 +240,7 @@ h2 {
 }
 
 .section-gallery {
-  background: linear-gradient(180deg, transparent 0%, #f5efe3 100%);
+  background: linear-gradient(180deg, transparent 0%, #121917 100%);
 }
 
 .menu-grid {
@@ -236,7 +250,7 @@ h2 {
 }
 
 .menu-card {
-  background: var(--paper);
+  background: #1a2320;
   border: 1px solid var(--line);
   border-radius: 16px;
   overflow: hidden;
@@ -275,6 +289,7 @@ h2 {
   font-weight: 800;
   color: var(--ink);
   font-size: 1.05rem;
+  color: var(--gold);
 }
 
 .section-paper {
@@ -290,7 +305,7 @@ h2 {
 .list-card {
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: var(--paper);
+  background: #16201d;
   padding: 1rem;
 }
 
@@ -310,6 +325,7 @@ h2 {
   margin: 0.6rem 0 0;
   font-size: 1rem;
   font-weight: 800;
+  color: var(--gold);
 }
 
 .list-cta {
@@ -325,7 +341,7 @@ h2 {
 .drink-card {
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: #fff;
+  background: #1a2320;
   padding: 1rem;
 }
 
@@ -346,7 +362,7 @@ h2 {
 
 .access-box {
   border: 1px solid var(--line);
-  background: var(--paper);
+  background: #18211e;
   border-radius: 16px;
   padding: 1.2rem;
 }
@@ -378,6 +394,7 @@ h2 {
 
 .footer {
   border-top: 1px solid var(--line);
+  background: var(--deep);
   padding: 1rem 0 6rem;
 }
 
@@ -404,23 +421,101 @@ h2 {
   z-index: 60;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid #000;
-  background: #111;
+  border-top: 1px solid #1f2a26;
+  background: #0b110f;
 }
 
 .sticky-cta a {
-  min-height: 56px;
+  min-height: 62px;
   color: #fff;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 0.88rem;
-  border-right: 1px solid #2f2f2f;
+  font-size: 0.95rem;
+  border-right: 1px solid #27312d;
 }
 
 .sticky-cta a:last-child {
   border-right: none;
+}
+
+.sticky-cta a:last-child {
+  background: var(--gold);
+  color: #15110d;
+}
+
+.reasons-grid {
+  margin-top: 1.1rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.reason-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  background: #1b2521;
+}
+
+.reason-card h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #f2eadf;
+}
+
+.reason-card p {
+  margin: 0.5rem 0 0;
+  color: var(--sub);
+  line-height: 1.7;
+}
+
+.reservation-band {
+  padding: 1.4rem 0;
+}
+
+.reservation-band-inner {
+  border: 1px solid #3d3324;
+  background: linear-gradient(135deg, #1a1610, #2d2418);
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.reservation-band p {
+  margin: 0;
+  color: #efe4d2;
+  font-weight: 600;
+}
+
+.social-links {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.instagram-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.instagram-item {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.instagram-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @media (min-width: 860px) {
@@ -442,12 +537,20 @@ h2 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .reasons-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .list-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .drink-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .sticky-cta {
@@ -461,6 +564,6 @@ h2 {
   }
 
   .sticky-cta a {
-    min-height: 48px;
+    min-height: 52px;
   }
 }
