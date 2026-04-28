@@ -205,12 +205,13 @@ main {
   inset: 0;
   background: linear-gradient(180deg, rgba(4, 7, 6, 0.34) 10%, rgba(4, 7, 6, 0.88) 85%);
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .hero-overlay > * {
   width: min(var(--max), calc(100% - 2rem));
   margin-inline: auto;
+  padding-top: clamp(110px, 18vh, 180px);
 }
 
 .hero-overlay .eyebrow,
@@ -262,7 +263,7 @@ h1 {
 }
 
 .hero-ctas {
-  padding-bottom: 2.6rem;
+  padding-bottom: 0;
   margin-top: 1.2rem;
   display: flex;
   gap: 0.7rem;
@@ -673,7 +674,7 @@ h2 {
 
   .hero-ctas {
     margin-top: 1.15rem;
-    padding-bottom: 2.35rem;
+    padding-bottom: 0;
     row-gap: 0.9rem;
   }
 
@@ -685,6 +686,7 @@ h2 {
 
   .hero-overlay > * {
     width: min(var(--max), calc(100% - 1.4rem));
+    padding-top: clamp(96px, 20vh, 140px);
   }
 }
 
@@ -713,6 +715,7 @@ h2 {
 
   .hero-overlay > * {
     width: min(var(--max), calc(100% - 4rem));
+    padding-top: clamp(120px, 22vh, 230px);
   }
 
   .featured-grid {
