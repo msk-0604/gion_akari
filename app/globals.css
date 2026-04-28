@@ -596,11 +596,13 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(2rem, 8.6vw, 2.4rem);
-    line-height: 2;
-    letter-spacing: 0.08em;
-    max-width: 90%;
-    margin-inline: auto;
+    font-size: clamp(1.7rem, 7.2vw, 2.05rem);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    max-width: 12.5em;
+    margin-left: 0;
+    margin-right: auto;
+    text-wrap: balance;
   }
 
   .section-label,
@@ -621,8 +623,8 @@ h2 {
 
   .hero-overlay .eyebrow,
   .hero-copy {
-    line-height: 2;
-    letter-spacing: 0.08em;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
   }
 
   .hero-copy,
@@ -639,9 +641,19 @@ h2 {
   }
 
   .hero-ctas {
-    margin-top: 1.4rem;
-    padding-bottom: 2.9rem;
+    margin-top: 1.15rem;
+    padding-bottom: 2.35rem;
     row-gap: 0.9rem;
+  }
+
+  .hero-ctas .cta {
+    min-width: 190px;
+    min-height: 50px;
+    font-size: 0.96rem;
+  }
+
+  .hero-overlay > * {
+    width: min(var(--max), calc(100% - 1.4rem));
   }
 }
 
