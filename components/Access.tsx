@@ -1,9 +1,7 @@
-const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
 const INSTAGRAM_URL = "https://www.instagram.com/gion_iroakari/?hl=ja";
 const TABELOG_URL = "https://tabelog.com/kyoto/A2601/A260301/26041771/";
 const MAP_URL =
   "https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%A9%8B%E6%9C%AC%E7%94%BA413-6";
-const PHONE_URL = "tel:075-606-4500";
 
 export function Access() {
   return (
@@ -30,12 +28,6 @@ export function Access() {
           </div>
         </dl>
         <div className="access-links">
-          <a href={RESERVE_URL} target="_blank" rel="noreferrer" className="cta cta-primary">
-            今すぐ空席を確認
-          </a>
-          <a href={PHONE_URL} className="cta cta-outline">
-            電話で予約（即対応）
-          </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
             Instagramを見る
           </a>

@@ -1,4 +1,3 @@
-const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
 const INSTAGRAM_URL = "https://www.instagram.com/gion_iroakari/?hl=ja";
 const TABELOG_URL = "https://tabelog.com/kyoto/A2601/A260301/26041771/";
 
@@ -36,9 +35,6 @@ export function StoreInfo() {
           </div>
         </dl>
         <div className="access-links">
-          <a href={RESERVE_URL} target="_blank" rel="noreferrer" className="cta cta-primary">
-            今すぐ空席を確認
-          </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
             Instagram
           </a>

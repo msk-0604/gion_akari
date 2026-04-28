@@ -1,5 +1,3 @@
-const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
-
 const courses = [
   {
     name: "当店名物 彩あかり箱 特上",
@@ -29,9 +27,6 @@ export function Courses() {
               <p className="list-name">{course.name}</p>
               <p className="list-note">{course.note}</p>
               <p className="list-price">{course.price}</p>
-              <a className="cta cta-outline list-cta" href={RESERVE_URL} target="_blank" rel="noreferrer">
-                1分で予約完了
-              </a>
             </article>
           ))}
         </div>

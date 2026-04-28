@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
-const PHONE_URL = "tel:075-606-4500";
 const FEATURED_IMAGE = "/featured-bento.png";
 
 export function Hero() {
@@ -25,10 +24,7 @@ export function Hero() {
         </p>
         <div className="hero-ctas">
           <a className="cta cta-primary hero-cta" href={RESERVE_URL} target="_blank" rel="noreferrer">
-            今すぐ空席を確認
-          </a>
-          <a className="cta cta-outline hero-cta-secondary" href={PHONE_URL}>
-            電話で予約（即対応）
+            ご予約はこちら
           </a>
         </div>
       </div>
