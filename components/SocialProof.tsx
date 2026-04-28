@@ -3,7 +3,7 @@ import Image from "next/image";
 const INSTAGRAM_URL = "https://www.instagram.com/gion_iroakari/?hl=ja";
 const TABELOG_URL = "https://tabelog.com/kyoto/A2601/A260301/26041771/";
 
-const photos = ["/featured-bento.png", "/menu-special.png", "/menu-limited.png", "/menu-seasonal.png"];
+const photos = ["/featured-bento.png", "/menu-special.png", "/menu-seasonal.png"];
 
 export function SocialProof() {
   return (
@@ -32,6 +32,7 @@ export function SocialProof() {
                 height={600}
                 className="instagram-photo"
                 sizes="(max-width: 860px) 50vw, 25vw"
+                quality={86}
               />
             </div>
           ))}

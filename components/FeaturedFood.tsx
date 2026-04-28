@@ -15,7 +15,7 @@ export function FeaturedFood() {
             彩あかりならではの一箱をご堪能ください。
           </p>
           <a className="cta cta-outline" href={RESERVE_URL} target="_blank" rel="noreferrer">
-            名物を予約する
+            本日予約はこちら
           </a>
         </div>
         <div className="featured-image-wrap parallax-target">
@@ -26,6 +26,7 @@ export function FeaturedFood() {
             width={1200}
             height={900}
             sizes="(max-width: 860px) 100vw, 55vw"
+            quality={90}
           />
         </div>
       </div>

@@ -31,10 +31,10 @@ export function Access() {
         </dl>
         <div className="access-links">
           <a href={RESERVE_URL} target="_blank" rel="noreferrer" className="cta cta-primary">
-            TableCheckで予約
+            今すぐ空席を確認
           </a>
           <a href={PHONE_URL} className="cta cta-outline">
-            電話する
+            電話で予約（即対応）
           </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
             Instagramを見る

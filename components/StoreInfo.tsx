@@ -37,7 +37,7 @@ export function StoreInfo() {
         </dl>
         <div className="access-links">
           <a href={RESERVE_URL} target="_blank" rel="noreferrer" className="cta cta-primary">
-            空席を確認する
+            今すぐ空席を確認
           </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="cta cta-outline">
             Instagram

@@ -21,6 +21,7 @@ export function Gallery() {
                 height={700}
                 className="interior-image"
                 sizes="(max-width: 860px) 50vw, 25vw"
+                quality={88}
               />
             </div>
           ))}

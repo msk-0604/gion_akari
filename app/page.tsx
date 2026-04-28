@@ -12,6 +12,7 @@ import { ReservationBand } from "@/components/ReservationBand";
 import { Scenes } from "@/components/Scenes";
 import { SocialProof } from "@/components/SocialProof";
 import { StoreInfo } from "@/components/StoreInfo";
+import { Story } from "@/components/Story";
 import { StickyCTA } from "@/components/StickyCTA";
 import { WhyChoose } from "@/components/WhyChoose";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <main>
         <Hero />
         <Concept />
+        <Story />
         <ReservationBand text="祇園でのお食事は、事前予約でスムーズにご案内します。" />
         <WhyChoose />
         <FeaturedFood />

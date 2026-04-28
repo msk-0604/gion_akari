@@ -30,7 +30,7 @@ export function Courses() {
               <p className="list-note">{course.note}</p>
               <p className="list-price">{course.price}</p>
               <a className="cta cta-outline list-cta" href={RESERVE_URL} target="_blank" rel="noreferrer">
-                このコースを予約する
+                1分で予約完了
               </a>
             </article>
           ))}

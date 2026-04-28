@@ -1,7 +1,7 @@
 const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
-const PHONE_URL = "tel:075-000-0000";
+const PHONE_URL = "tel:075-606-4500";
 const MAP_URL =
-  "https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92+%E5%BD%A9%E3%81%82%E3%81%8B%E3%82%8A";
+  "https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%A9%8B%E6%9C%AC%E7%94%BA413-6";
 
 export function StickyCTA() {
   return (
@@ -11,7 +11,7 @@ export function StickyCTA() {
         地図
       </a>
       <a href={RESERVE_URL} target="_blank" rel="noreferrer">
-        予約
+        本日予約はこちら
       </a>
     </div>
   );
