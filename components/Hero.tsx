@@ -18,7 +18,10 @@ export function Hero() {
       </div>
       <div className="hero-overlay">
         <p className="eyebrow">京都 祇園 / ハコノスシ 彩あかり</p>
-        <h1>祇園で味わう、静かな大人の一席</h1>
+        <h1 className="hero-title">
+          <span>祇園で味わう、</span>
+          <span>静かな大人の一席</span>
+        </h1>
         <p className="hero-copy">
           京都・祇園の情緒に包まれながら、季節の料理と心地よい時間を。
         </p>

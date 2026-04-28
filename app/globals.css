@@ -235,6 +235,17 @@ h1 {
   letter-spacing: 0.08em;
 }
 
+.hero-title {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem 1.2rem;
+  align-items: baseline;
+}
+
+.hero-title span {
+  white-space: nowrap;
+}
+
 .hero-copy {
   margin: 0;
   font-size: clamp(1rem, 3.5vw, 1.26rem);
@@ -603,6 +614,13 @@ h2 {
     margin-left: 0;
     margin-right: auto;
     text-wrap: balance;
+  }
+
+  .hero-title {
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    gap: 0.25rem 0.8rem;
+    font-size: clamp(1.3rem, 5.6vw, 1.55rem);
+    max-width: 100%;
   }
 
   .section-label,
