@@ -216,13 +216,12 @@ main {
   padding-top: clamp(120px, 16vh, 170px);
   padding-bottom: clamp(72px, 12vh, 120px);
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  grid-template-columns: 1fr;
   align-content: end;
-  gap: 2.2rem;
+  gap: 1rem;
 }
 
-.hero-main,
-.hero-side {
+.hero-main {
   position: relative;
   z-index: 1;
 }
@@ -250,15 +249,6 @@ h1 {
 
 .hero-title {
   max-width: 14ch;
-}
-
-.hero-copy {
-  margin: 0;
-  font-size: clamp(1rem, 3.5vw, 1.26rem);
-  color: #e6dbc8;
-  line-height: 2;
-  letter-spacing: 0.08em;
-  max-width: 28ch;
 }
 
 .hero-ctas {
@@ -641,19 +631,16 @@ h2 {
   .reservation-band p,
   .info-list dd,
   .access-list dd,
-  .hero-copy,
   .hero-overlay .eyebrow {
     max-width: 90%;
     margin-inline: auto;
   }
 
-  .hero-overlay .eyebrow,
-  .hero-copy {
+  .hero-overlay .eyebrow {
     line-height: 1.8;
     letter-spacing: 0.05em;
   }
 
-  .hero-copy,
   .section-description,
   .story-text,
   .reason-card p,
@@ -743,6 +730,7 @@ h2 {
     min-height: 720px;
     padding-top: clamp(120px, 18vh, 220px);
     padding-bottom: clamp(80px, 12vh, 130px);
+    gap: 1.2rem;
   }
 
   .featured-grid {
