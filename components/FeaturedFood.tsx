@@ -1,5 +1,5 @@
 import Image from "next/image";
-const FEATURED_IMAGE = "/featured-bento.png";
+const FEATURED_IMAGE = "/featured-bento.webp";
 
 export function FeaturedFood() {
   return (
@@ -21,7 +21,8 @@ export function FeaturedFood() {
             width={1200}
             height={900}
             sizes="(max-width: 860px) 100vw, 55vw"
-            quality={90}
+            quality={80}
+            loading="lazy"
           />
         </div>
       </div>

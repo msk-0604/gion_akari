@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/ogp.jpg",
+        url: "/ogp.webp",
         width: 1200,
         height: 630,
         alt: "祇園 彩あかりの彩り重箱"
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "祇園いろあかり｜京都・祇園の和モダンな飲食店",
     description:
       "京都・祇園で季節の料理と上質な時間を楽しめる「祇園いろあかり」の公式デモサイトです。",
-    images: ["/ogp.jpg"]
+    images: ["/ogp.webp"]
   }
 };
 

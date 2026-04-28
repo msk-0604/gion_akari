@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const RESERVE_URL = "https://www.tablecheck.com/ja/iroakari-gion";
-const FEATURED_IMAGE = "/featured-bento.png";
+const FEATURED_IMAGE = "/featured-bento.webp";
 
 export function Hero() {
   return (
@@ -17,7 +17,10 @@ export function Hero() {
         />
       </div>
       <div className="hero-overlay">
-        <p className="eyebrow">京都 祇園 / ハコノスシ 彩あかり</p>
+        <p className="eyebrow hero-kicker">
+          <span>京都 祇園</span>
+          <span>ハコノスシ 彩あかり</span>
+        </p>
         <h1 className="hero-title">
           <span>祇園で味わう、</span>
           <span>静かな大人の一席</span>

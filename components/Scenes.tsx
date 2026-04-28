@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const scenes = [
-  { title: "記念日", text: "特別な一日に、華やかな彩りを。", image: "/menu-special.png" },
-  { title: "接待", text: "落ち着いた設えで、大切な会食にも。", image: "/featured-bento.png" },
-  { title: "観光", text: "祇園散策の途中に、上質なランチを。", image: "/menu-seasonal.png" },
-  { title: "デート", text: "静かな空間でゆったり語らう時間。", image: "/menu-limited.png" }
+  { title: "記念日", text: "特別な一日に、華やかな彩りを。", image: "/menu-special.webp" },
+  { title: "接待", text: "落ち着いた設えで、大切な会食にも。", image: "/featured-bento.webp" },
+  { title: "観光", text: "祇園散策の途中に、上質なランチを。", image: "/menu-seasonal.webp" },
+  { title: "デート", text: "静かな空間でゆったり語らう時間。", image: "/menu-limited.webp" }
 ];
 
 export function Scenes() {
@@ -24,7 +24,8 @@ export function Scenes() {
                   height={600}
                   className="scene-photo"
                   sizes="(max-width: 860px) 100vw, 25vw"
-                  quality={88}
+                  quality={78}
+                  loading="lazy"
                 />
               </div>
               <h3>{scene.title}</h3>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const interiorImages = ["/featured-bento.png", "/menu-special.png", "/menu-limited.png", "/menu-seasonal.png"];
+const interiorImages = ["/featured-bento.webp", "/menu-special.webp", "/menu-limited.webp", "/menu-seasonal.webp"];
 
 export function Gallery() {
   return (
@@ -21,7 +21,8 @@ export function Gallery() {
                 height={700}
                 className="interior-image"
                 sizes="(max-width: 860px) 50vw, 25vw"
-                quality={88}
+                quality={78}
+                loading="lazy"
               />
             </div>
           ))}

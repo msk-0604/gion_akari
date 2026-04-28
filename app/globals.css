@@ -227,6 +227,13 @@ main {
   font-size: 0.82rem;
 }
 
+.hero-kicker {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.25rem 1rem;
+  align-items: center;
+}
+
 h1 {
   margin: 0.8rem 0 0.6rem;
   font-size: clamp(2rem, 7vw, 4rem);
@@ -643,6 +650,12 @@ h2 {
   .hero-copy {
     line-height: 1.8;
     letter-spacing: 0.05em;
+  }
+
+  .hero-kicker {
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    gap: 0.15rem 0.65rem;
+    font-size: 0.72rem;
   }
 
   .hero-copy,
